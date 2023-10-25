@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <link rel="stylesheet" href="background_styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="../static/css/header.css" th:href="@{/css/header.css}">
+  <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}">
+  <script src="./index.js" defer></script>
+</head>
+<body>
+<nav class="navbar">
+  <div class="brand-title">
+    Hikmatullo
+  </div>
+  <a href="#" class="toggle-button">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </a>
+  <div class="navbar-links">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a th:href="@{/login}">Login</a></li>
+      <li><a th:href="@{/registration}">Sign up</a></li>
+
+    </ul>
+  </div>
+</nav>
+<section class="welcome-section">
+  <h1>Welcome</h1>
+  <h3>User Registration and Login project</h3>
+</section>
+</body>
+</html>

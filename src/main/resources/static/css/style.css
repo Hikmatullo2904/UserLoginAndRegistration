@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fstar-background&psig=AOvVaw0QlKkcC1PKgMFpHjX1-tcL&ust=1697867951497000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIignpr5g4IDFQAAAAAdAAAAABAE");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #659fd9;
+    color: #ecf0f1;
+}
+
+.welcome-section h1 {
+    font-size: 120px;
+    margin-bottom: 20px;
+}
+@media(max-width: 768px) {
+    .welcome-section h1 {
+        font-size: 80px;
+    }
+}
+
+.welcome-section h3 {
+    font-size: 30px;
+    line-height: 1.6;
+}
